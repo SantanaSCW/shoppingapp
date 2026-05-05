@@ -1,10 +1,7 @@
-function App() {
-  return (
-    <div>
-      <h1>Shopping App</h1>
-      <p>Happy coding!</p>
-    </div>
-  )
-}
-
-export default App
+{filteredItems.length > 0 ? (
+  filteredItems.map(item => (
+    <div key={item.id}>{item.name}</div>
+  ))
+) : (
+  <p>No products available.</p>
+)}
